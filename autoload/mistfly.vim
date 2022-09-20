@@ -226,7 +226,7 @@ function! mistfly#ActiveStatusLine() abort
         let l:statusline .= '%*' . l:divider
         let l:statusline .= '%* %{mistfly#IndentStatus()} '
     endif
-    let l:statusline .= '%* '
+    let l:statusline .= '%*  '
 
     return l:statusline
 endfunction
@@ -242,7 +242,7 @@ function! mistfly#InactiveStatusLine() abort
     if g:mistflyWithIndentStatus
         let l:statusline .= l:divider . ' %{mistfly#IndentStatus()} '
     endif
-    let l:statusline .= '%* '
+    let l:statusline .= '%*  '
 
     return l:statusline
 endfunction
